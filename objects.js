@@ -6,7 +6,8 @@ function updatePlaylist(playlist, artistName, songTitle){
 }
 
 function removeFromPlaylist(playlist, artistName){
-  return delete playlist [artistName]
+  delete playlist [artistName]
+  return playlist
 }
 
-/////use square brackets when, as with artistName when key is not a simple string e.g. when it is a variable 
+/////use square brackets when, as with artistName, key is not a simple string e.g. when it is a variable 
